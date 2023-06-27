@@ -7,9 +7,6 @@ while [[ $opcion =~ [1-9] ]]; do
 
     echo "1. Generar imagenes"
     echo "2. Descargar imagenes"
-    echo "3. Procesar imagenes"
-    echo "4. Comprimir imagenes"
-    echo "5. Descomprimir imagenes"
     echo "9. Cerrar menu"
 
     read -p "ingrese una opcion: " opcion
@@ -23,15 +20,6 @@ while [[ $opcion =~ [1-9] ]]; do
             read "ingrese la ruta del archivo" $archivo
             read "ingrese la ruta del archivo de suma de verificacion" $suma_verificacion
             bash desacargar.sh $archivo $suma_verificacion
-            ;;
-        3)
-            bash procesar.sh
-            ;;
-        4)
-            bash comprimir.sh
-            ;;
-        5)  
-            bash descomprimir.sh
             ;;
         9) 
             exit
