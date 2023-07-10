@@ -8,7 +8,7 @@ while [[ $IMAGENES < $@ ]]; do
     NOMBREARCHIVO="${NOMBRE^}"
     wget https://source.unsplash.com/random/900%C3%97700/?person -O ./imagenesGeneradas/$NOMBREARCHIVO
     sleep 1s
-    ((i++))
+    ((IMAGENES++))
 done
 zip -r imagenesGeneradas.zip imagenesGeneradas
 echo $(sha256sum imagenesGeneradas.zip)>sumimagenesGeneradas
