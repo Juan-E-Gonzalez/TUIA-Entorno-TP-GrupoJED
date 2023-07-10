@@ -18,7 +18,7 @@ while [[ $IMAGENES < $1 ]]; do
     sleep 1
 done
 zip imagenes_Generadas imagenesGeneradas/*.jpg
-echo $(sha256sum imagenes_Generadas.zip)>sumimagenesGeneradas
+echo $(sha256sum imagenes_Generadas.zip | cut -d " " -f 1)>sumaVerificacion
 rm -r imagenesGeneradas
 exit 0
 
