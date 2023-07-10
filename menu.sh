@@ -18,7 +18,7 @@ while [[ $opcion =~ [1-9] ]]; do
         2)
             read "ingrese la ruta del archivo" $archivo
             read "ingrese la ruta del archivo de suma de verificacion" $suma_verificacion
-            bash desacargar.sh $archivo $suma_verificacion
+            bash descargar.sh $archivo $suma_verificacion
             ;;
         9) 
             exit
