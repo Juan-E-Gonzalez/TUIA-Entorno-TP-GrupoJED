@@ -1,9 +1,9 @@
 #!/usr/bin/bash
 
-if [[ ! $1 =~ ^[0-9]+$ ]];then
+if [[ ! $1 =~ ^[0-9]+$ ]]; then
     echo $1
     echo "No se indico un numero valido";
-	exit 1;
+    exit 1;
 fi;
 
 mkdir -p imagenesGeneradas
