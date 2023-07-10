@@ -1,7 +1,6 @@
 #!/usr/bin/bash
 
 opcion=1
-numero=1
 
 while [[ $opcion =~ [1-9] ]]; do
 
@@ -13,7 +12,7 @@ while [[ $opcion =~ [1-9] ]]; do
 
             case $opcion in 
         1)
-            read -p "ingrese la cantidad de imagenes que desea generar. 1 por defecto" numero
+            read -p "ingrese la cantidad de imagenes que desea generar: " $numero
             bash generar.sh $numero
             ;;
         2)
