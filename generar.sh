@@ -1,7 +1,6 @@
 #!/usr/bin/bash
 
-if [[ ! $1 =~ ^[0-9]+$ ]]; then
-    echo $1
+if [[ $# != 1 || ! $1 =~ ^[0-9]+$ ]];then  
     echo "No se indico un numero valido";
     exit 1;
 fi;
@@ -17,8 +16,8 @@ while [[ $IMAGENES < $1 ]]; do
     echo "Imagen $NOMBREARCHIVO generada!"
     sleep 1
 done
-zip imagenes_Generadas imagenesGeneradas/*.jpg
-echo $(sha256sum imagenes_Generadas.zip)>sumimagenesGeneradas
+zip imagenes_Generadas imagenesGeneradas/*
+echo $(sha256sum imagenes_Generadas.zip | cut -d " " -f 1)>sumaVerificacion
 rm -r imagenesGeneradas
 exit 0
 
