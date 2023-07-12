@@ -19,8 +19,8 @@ while [[ $opcion =~ [1-9] ]]; do
             bash generar.sh $numero
             ;;
         2)
-            read -p "ingrese la ruta del archivo" archivo
-            read -p "ingrese la ruta del archivo de suma de verificacion" suma_verificacion
+            read -p "ingrese la ruta del archivo: " archivo
+            read -p "ingrese la ruta del archivo de suma de verificacion: " suma_verificacion
             bash descargar.sh $archivo $suma_verificacion
             ;;
         3)
