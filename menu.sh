@@ -7,6 +7,7 @@ while [[ $opcion =~ [1-9] ]]; do
     echo "1. Generar imagenes"
     echo "2. Descargar imagenes"
     echo "3. Descomprimir"
+    echo "5. Comprimir"
     echo "9. Cerrar menu"
 
     read -p "ingrese una opcion: " opcion
@@ -23,6 +24,9 @@ while [[ $opcion =~ [1-9] ]]; do
             ;;
         3)
             bash descomprimir.sh
+            ;;
+        5)
+            bash comprimir.sh
             ;;
         9) 
             exit
