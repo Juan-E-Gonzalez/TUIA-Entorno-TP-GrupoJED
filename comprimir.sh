@@ -37,3 +37,4 @@ zip salida salida/*
 mv -f ./salida.zip ./comprimido
 rm -r salida
 echo "El archivo se comprimio con exito"
+exit 0
