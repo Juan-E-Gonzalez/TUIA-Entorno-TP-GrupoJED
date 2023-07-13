@@ -2,17 +2,17 @@
 
 ## Comandos para clonar el repositorio
 
-git clone https://github.com/Juan-E-Gonzalez/TUIA-Entorno-TP-GrupoJED.git
+- git clone https://github.com/Juan-E-Gonzalez/TUIA-Entorno-TP-GrupoJED.git
 
 ## Comandos para inciar docker
 
-sudo docker build -t tpentorno .
-sudo docker run -it -v ~/Desktop/tpentorno:/home/TPentorno/comprimido tpentorno
+- sudo docker build -t tpentorno .
+- sudo docker run -it -v ~/Desktop/tpentorno:/home/TPentorno/comprimido tpentorno
 
 ## Links de descarga
 
-Imagenes: https://github.com/EugenioBravi/entornosarchivos/raw/main/imagenes_Generadas.zip
-SumaVerificacion: https://github.com/EugenioBravi/entornosarchivos/raw/main/sumaVerificacion.sha256
+- Imagenes: https://github.com/EugenioBravi/entornosarchivos/raw/main/imagenes_Generadas.zip
+- SumaVerificacion: https://github.com/EugenioBravi/entornosarchivos/raw/main/sumaVerificacion.sha256
 
 ## Instrucciones
 
