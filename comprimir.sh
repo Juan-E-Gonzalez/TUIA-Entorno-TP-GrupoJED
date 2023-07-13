@@ -22,7 +22,6 @@ for imagen in ../imagenesGeneradas/*; do
     fi
     
     if [[ $ultima_letra == "a" ]]; then
-        echo "$nombre" >> "$archivo_personas"
         ((nombre_femenino++))
     fi
 
